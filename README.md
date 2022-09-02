@@ -6,7 +6,7 @@ A repository to store curated answers for some of the most commonly asked questi
 
 ### I'm looking to build a new forensic computer. What considerations should I be aware of when speccing out a build?
 
-#### Working Ideal Answer
+#### Working Ideal Answer (delete this header and adjust all the below subheaders when finalized)
 
 ##### CPU
 
@@ -29,6 +29,14 @@ TODO
 ###### Bottlenecks
 
 You can have the fastest CPU, GPU, and RAM available, but if you're using 5400 RPM Hard Disk Drives (HDDs), your computer is going to move very slow as it can only go as fast as the slowest component, which is what we call a performance bottleneck.
+
+##### Forensic Software
+
+Not all forensic software is created equal. However, generally speaking, fast storage and CPU with lots of RAM will serve most commercial forensic suites well. Most forensic suites break down processing of artifacts/files by thread so that's where a high core/thread count will come into play to make processing artifacts/files completed in a quicker manner.
+
+TODO
+
+include screenshots from common forensic suites showing thread processing examples
 
 #### Answer A (to be cleaned up)
 
