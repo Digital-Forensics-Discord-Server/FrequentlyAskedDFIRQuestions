@@ -10,11 +10,25 @@ A repository to store curated answers for some of the most commonly asked questi
 
 ##### CPU
 
-If you want to futureproof a prospective build, then strongly consider 8 cores/16 threads as the bare minimum and ideally consider 16 cores/32 threads as a best case scenario in most instances. A stretch goal would be AMD's Threadripper line, which can provide options including 12 cores/24 threads, 16 cores/32 threads, 24 cores/48 threads, 32 cores/64 threads, and even 64 cores/128 threads. 24 or 32 cores is excessive while still being within the realm of reason, but 64 cores is arguably unreasonably excessive for almost any possible scenario in DFIR. The law of [diminishing returns](https://en.wikipedia.org/wiki/Diminishing_returns) will come into play.
+If you want to futureproof a prospective build, then strongly consider 8 cores/16 threads as the bare minimum and ideally consider 16 cores/32 threads as a best case scenario in most instances. A stretch goal would be AMD's [Threadripper](https://en.wikipedia.org/wiki/List_of_AMD_Ryzen_processors) line, which can provide options including 12 cores/24 threads, 16 cores/32 threads, 24 cores/48 threads, 32 cores/64 threads, and even 64 cores/128 threads. 24 or 32 cores is excessive while still being within the realm of reason, but 64 cores is arguably unreasonably excessive for almost any possible scenario in DFIR. The law of [diminishing returns](https://en.wikipedia.org/wiki/Diminishing_returns) will come into play.
 
 ##### GPU
 
-If you're into password cracking, you'll want the best GPU available and likely multiple of them. Otherwise, if you're not into password cracking, get a GPU that has enough monitor ports to satisfy the needs of your examiner(s). 
+If you're into password cracking, you'll want the best GPU available, and likely multiple of them. Otherwise, if you're not into password cracking, get a GPU that has enough monitor ports to satisfy the needs of your examiner(s). 
+
+##### RAM
+
+TODO
+
+##### Storage
+
+TODO
+
+##### Other Things to Consider
+
+###### Bottlenecks
+
+You can have the fastest CPU, GPU, and RAM available, but if you're using 5400 RPM Hard Disk Drives (HDDs), your computer is going to move very slow as it can only go as fast as the slowest component, which is what we call a performance bottleneck.
 
 #### Answer A (to be cleaned up)
 
