@@ -10,7 +10,7 @@ A repository to store curated answers for some of the most commonly asked questi
 
 ##### CPU
 
-If you want to futureproof a prospective build, then strongly consider 8 cores/16 threads as the bare minimum and ideally consider 16 cores/32 threads as a best case scenario in most instances. A stretch goal would be AMD's Threadripper line, which can provide options including 24 cores/48 threads, 32 cores/64 threads, and even 64 cores/128 threads. 24 or 32 cores is excessive while still being within the realm of reason, but 64 cores is arguably unreasonably excessive for almost any possible scenario in DFIR. 
+If you want to futureproof a prospective build, then strongly consider 8 cores/16 threads as the bare minimum and ideally consider 16 cores/32 threads as a best case scenario in most instances. A stretch goal would be AMD's Threadripper line, which can provide options including 12 cores/24 threads, 16 cores/32 threads, 24 cores/48 threads, 32 cores/64 threads, and even 64 cores/128 threads. 24 or 32 cores is excessive while still being within the realm of reason, but 64 cores is arguably unreasonably excessive for almost any possible scenario in DFIR. The law of [diminishing returns](https://en.wikipedia.org/wiki/Diminishing_returns) will come into play.
 
 ##### GPU
 
