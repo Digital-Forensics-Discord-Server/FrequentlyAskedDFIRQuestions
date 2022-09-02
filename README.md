@@ -18,6 +18,18 @@ If you'll regularly be performing any kind of brute forcing or credential auditi
 
 Definitely focus on cores/threads for processing power. If you're cracking passwords, you want GPU power. If you're doing anything else, CPU power should reign supreme. Threadripper would be pretty awesome but it's expensive. I wouldn't go any less than 8 cores nowadays and for futureproofing your build. Ideally, get an Intel or AMD CPU that has double digit cores, i.e., 16 Cores/32 Threads. That should last you quite a bit yet still not be as expensive as a 32 core/64 thread Threadripper.
 
+#### Ideal answer
+
+An ideal answer should have good guidelines by component or even by forensic suite?
+
+CPU - Cores/threads
+GPU - password cracking
+RAM - RAM disks, multitasking, etc
+Storage - m.2 vs SSD vs HDD (include graph with speed comparisons)
+Writeblockers - link to various options
+
+AXIOM/X-Ways/Cellebrite/Thor - lots of cores/threads, fast storage to minimize bottlenecks, RAM to handle processing
+
 ### How do I get started in DFIR?
 
 Here are some videos to get you started:
