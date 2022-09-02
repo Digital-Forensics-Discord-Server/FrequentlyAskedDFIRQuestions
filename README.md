@@ -1,4 +1,4 @@
-# Questions Frequently Asked in the Digital Forensics Discord Server
+# Digital Forensics Discord Server FAQs
 
 A repository to store some of the most commonly asked questions within the Digital Forensics Discord Server
 
