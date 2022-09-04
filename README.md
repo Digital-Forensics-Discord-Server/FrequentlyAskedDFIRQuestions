@@ -18,11 +18,17 @@ If you're into password cracking, you'll want the best GPU available, and likely
 
 ##### RAM
 
-TODO
+Some commercial forensic suites are RAM hogs, and some are not. As with everything, know your tool and cater your build towards the tools you'll be using on the forensic machine(s). In general, the more the merrier, but nowadays anything less than 32GB of RAM is not advised. 
+
+One other thing to consider is if you have 128GB or more RAM in a computer, you can allocate some of that RAM to a RAM Disk for much faster read speeds of data you're parsing with a forensic tool. 
+
+For example, see the image below ([Source](https://www.geckoandfly.com/21507/ramdisk-virtual-disk-memory/)):
+
+![test](https://th.bing.com/th/id/R.34637985be3be016f7e3d389a3fff608?rik=Yrmd%2bSaad7ML3A&riu=http%3a%2f%2fcdn3.geckoandfly.com%2fwp-content%2fuploads%2f2016%2f06%2fram-disk-comparison-830x272.jpg&ehk=xexSnn5iW0JRfONzt3Hx34BZzCWDLDpYsNSyeXhq%2fWQ%3d&risl=&pid=ImgRaw&r=0)
 
 ##### Storage
 
-TODO
+Going off the above graphic, you can see why you should move on from HDD storage unless you need to take advantage of the larger capacities they offer. HDDs are fine for NAS devices, but for your forensic machine, they should only be used for storage of evidence that's not actively being processed, if at all. SSDs should be the bare minimum and ideally at least one or multiple M.2 storage devices would be considered for an everyday forensic machine. As of September 2022, M.2 devices max out at 4TB in storage capacity. While that will rise over time, they are definitely more expensive than SSDs and HDDs per terabyte. 
 
 ##### Other Things to Consider
 
@@ -46,19 +52,15 @@ If you'll be handling lots of device/disk images on it, more disk space is usefu
 
 If you'll regularly be performing any kind of brute forcing or credential auditing (i.e. hashing/cracking) on it, then faster processor/gpu can be helpful (depending on what you're running to perform the audit)
 
-#### Answer B (to be cleaned up)
-
-Definitely focus on cores/threads for processing power. If you're cracking passwords, you want GPU power. If you're doing anything else, CPU power should reign supreme. Threadripper would be pretty awesome but it's expensive. I wouldn't go any less than 8 cores nowadays and for futureproofing your build. Ideally, get an Intel or AMD CPU that has double digit cores, i.e., 16 Cores/32 Threads. That should last you quite a bit yet still not be as expensive as a 32 core/64 thread Threadripper.
-
 #### Ideal answer template
 
 An ideal answer should have good guidelines by component or even by forensic suite?
 
-CPU - Cores/threads
-GPU - password cracking
-RAM - RAM disks, multitasking, etc
-Storage - m.2 vs SSD vs HDD (include graph with speed comparisons)
-Writeblockers - link to various options
+* [x] CPU - Cores/threads
+* [ ] GPU - password cracking
+* [x] RAM - RAM disks, multitasking, etc
+* [x] Storage - m.2 vs SSD vs HDD (include graph with speed comparisons)
+* [ ] Writeblockers - link to various options
 
 AXIOM/X-Ways/Cellebrite/Thor - lots of cores/threads, fast storage to minimize bottlenecks, RAM to handle processing
 
