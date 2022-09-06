@@ -40,6 +40,10 @@ You can have the fastest CPU, GPU, and RAM available, but if you're using 5400 R
 
 Not all forensic software is created equal. However, generally speaking, fast storage and CPU with lots of RAM will serve most commercial forensic suites well. Most forensic suites break down processing of artifacts/files by thread so that's where a high core/thread count will come into play to make processing artifacts/files completed in a quicker manner.
 
+##### Other Resources
+
+A member of the Digital Forensics Discord Server put together [this page](https://ryd3v.rocks/posts/wrkstnbuild) in response to this commonly asked question.
+
 TODO
 
 include screenshots from common forensic suites showing thread processing examples
