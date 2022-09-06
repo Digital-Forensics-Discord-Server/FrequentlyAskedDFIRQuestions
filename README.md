@@ -42,7 +42,7 @@ Not all forensic software is created equal. However, generally speaking, fast st
 
 ##### Other Resources
 
-A member of the Digital Forensics Discord Server put together [this page](https://ryd3v.rocks/posts/wrkstnbuild) in response to this commonly asked question.
+A member of the Digital Forensics Discord Server put together [this page](https://ryd3v.rocks/posts/wrkstnbuild) in response to this commonly asked question. This answer can also be found [here](https://github.com/Digital-Forensics-Discord-Server/FrequentlyAskedDFIRQuestions/blob/main/wrkstnbuild.md) on GitHub.
 
 TODO
 
