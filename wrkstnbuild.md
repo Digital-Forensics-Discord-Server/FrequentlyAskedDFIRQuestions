@@ -2,7 +2,7 @@
 
 I've been designing and building computers, workstations and enterprise servers now for over 25 years. I started my first builds when [Windows 95](https://en.wikipedia.org/wiki/Windows_95) was released, and have enjoyed building systems ever since. A lot has changed since then, and technology within the past few years has skyrocket upwards.
 
-I personally use a Apple Mac Mini with the M1 chip, and it's been fantastic. Not one complaint, except a bit a of a learning curve coming from x86 architecture to Arm64, and some software compatibility.
+I personally use a Apple Mac Mini with the M1 chip, and it's been fantastic. Not one complaint, except a bit a of a learning curve coming from x86 architecture to Arm64, and some software compatibility. I also have a x86 Desktop that I use at home, with Ubuntu as my main OS.
 
 This post however isn't about Apple or Mac, it's about my design process for x86 based workhorses. I will briefly explain my design methodology, why I go about a particular design method, and some general tips on how I settle on a design pattern for myself, and my clientele. Let's jump right into it.
 
@@ -14,13 +14,13 @@ For my custom builds, for all my customers I use the latest and greatest tested 
 
 ### System design
 
-When I design a system step one is to ask myself or the customer, what is your goal for this system? Based on the response, the next question is probably the most important factor, what is your budget? From here we can proceed to the design phase, where I spend a good amount of time comparing prices, specs and product availability. For the purposes of this post, we will hypothetically lay out the schema for a forensics workstation.
+When I design a system step one is to ask myself or the customer, what is your goal for this system? Based on the response, the next question is probably the most important factor, what is your budget? From here we can proceed to the design phase, where I spend a good amount of time comparing prices, specs and product availability. For the purposes of this post, we will hypothetically lay out the schema for a forensics workstation based on AMD.
 
 ### System Schema
 
 When building a system I start my build design in somewhat of an unorthodox approach, and while some builders do the same, in the professional workspace it can sometimes go against the grain. Change can be hard sometimes but stick with me.
 
-My build schema always starts with the motherboard. Why? Think of the motherboard as the central nervous system. I always start with the newest and most feature rich motherboard currently available within my budget parameters. In this scenario, Chip manufacturer selection isn't a priority, Intel or AMD based doesn't matter, and for the sake of brevity, when I design a system, I offer both options with comparable specs and leave it up to the customer to decide, which CPU brand they would like t go with.
+My build schema always starts with the motherboard. Why? Think of the motherboard as the central nervous system. I always start with the newest and most feature rich motherboard currently available within my budget parameters. In this scenario, Chip manufacturer selection isn't a priority, Intel or AMD based doesn't matter, and for the sake of brevity, when I design a system, I offer both options with comparable specs and leave it up to the customer to decide, which CPU brand they would like t go with, unless they specifically request a certain chip.
 
 #### Schema
 
@@ -34,7 +34,7 @@ My build schema always starts with the motherboard. Why? Think of the motherboar
 > 8. Power Supply
 > 9. Case Fan(s)
 
-Reasons for motherboard first? I've always had the philosophy that you can easily upgrade a CPU, however motherboard upgrades, are much much harder, especially when it comes to your host software installation, OS corruption etc. It's a lot easier to swap a CPU, than to swap a motherboard, and you can save a little money in the beginning by using less or cheaper ram, and then upgrading that as needed also, it's not hard to pop a new stick in, or swap a CPU on thermal paste days right. Also maxing out on the motherboard guarantees a better overall system stability.
+Reasons for motherboard first? I've always had the philosophy that you can easily upgrade a CPU, however motherboard upgrades, are much much harder, especially when it comes to your host software installation, OS corruption etc. It's a lot easier to swap a CPU, than to swap a motherboard, and you can save a little money in the beginning by using less or cheaper ram, and then upgrading that as needed also, it's not hard to pop a new stick in, or swap a CPU on thermal paste days right. Also maxing out on the motherboard guarantees a better overall system stability and performance.
 
 Ok, now that's out of the way, how do I make a mock-up for clientele? Honestly speaking, usually pen and paper, haha kidding. I use [PCPARTPICKER](https://pcpartpicker.com/), you can easily compare pricing, and share with your customers within seconds. Keep in mind builds are public, so if you're making a super secret build, use the old fashioned mock-up quote from Excel :)
 
@@ -44,7 +44,7 @@ Alright let's go through a sample build for a forensics workstation, with a fair
 
 I tend to stick with a few brands, that over the years have served me and my clients well. Usually I go with [Asus](https://www.asus.com/ca-en/Motherboards-Components/Motherboards/All-series/), or [Gigabyte](https://www.gigabyte.com/Motherboard).
 
-Since this is a forensics machine designed for a lab environment and not for gaming, I would go with a workstation specific board.
+Since this is a forensics machine designed for a lab environment and not for gaming, I would go with a **workstation** specific board.
 
 For this build [AMD WRX80 Ryzen™ Threadripper™ PRO extended-ATX workstation motherboard ](https://www.asus.com/ca-en/Motherboards-Components/Motherboards/Workstation/Pro-WS-WRX80E-SAGE-SE-WIFI/)
 
@@ -74,7 +74,7 @@ What makes this motherboard stand out?
 >
 > BIOS Flashback
 
-This motherboard isn't available on PCPARTPICKER at the moment, so we will just add the other components to our final build list, that are compatible with the CPU selected.
+This motherboard isn't available on PCPARTPICKER at the moment, so we will just add the other components to our final build list, that are compatible with the motherboard we selected.
 
 Buy [ASUS Pro WS WRX80E-SAGE SE WIFI](https://www.newegg.ca/asus-pro-ws-wrx80e-sage-se-wifi/p/N82E16813119391?sid=6316910932c8cb440d745303&nm_mc=otc-hatch&cm_mmc=otc-hatchca-_-motherboards+amd-_-asus-_-13119391)
 
@@ -102,27 +102,39 @@ Beast
 
 > $2,189.99 CAD
 
-Ok so we have our main components, and eventhough they aren't cheap, keep in mind this is for a commercial workstation, that is designed to run 24/7 - 365
+Ok so we have our main components, and eventhough they aren't cheap, keep in mind this is for a commercial workstation, that is designed to run 24/7 - 365, for a professional examiner.
 
 ## Water cooling
 
-I have always built my PC's with water-cooling, more specifically an AIO, "AiO" stands for "All in One", which means that you'll get a complete package, consisting of radiator, fan, pump, tubes and cooling unit, which reliably cools your CPU. Unless the client want's a custom loop, usually though for simplicity, I go with an AIO. Just like the other components, from my testing I stick with a particular brand that I've put through the paces, and have always been happy with. _EVGA_
+I have always built my PC's with water-cooling, more specifically an AIO, "AiO" stands for "All in One", which means that you'll get a complete package, consisting of radiator, fan, pump, tubes and cooling unit, which reliably cools your CPU, and keeps your workspace quiet. Unless the client want's a custom loop, usually though for simplicity, I go with an AIO. Just like the other components, from my testing I stick with a particular brand that I've put through the paces, and have always been happy with. _EVGA_
 
-For our build since the CPU is an absolute "Unit", shout out to my British folk, I chose the [EVGA CLC 360mm All-In-One](https://www.evga.com/products/product.aspx?pn=400-HY-CL36-V1). EVGA has a awesome warranty process, and I've had great success with their products, adn returns/replacements, to be fair, I've only had one product returned, and it was actually purchased through Amazon, so I don't know if it was just the handling of the product(video card), nevertheless they exchanged my product hassle free, and the build was a great success. They stand by their product and are quality made. Whew, that was a mouth-full.
+For our build since the CPU is an absolute "Unit", shout out to my British folk, I chose the [EVGA CLC 360mm All-In-One](https://www.evga.com/products/product.aspx?pn=400-HY-CL36-V1). EVGA has an awesome warranty process, and I've had great success with their products, and returns/replacements, to be fair, I've only had one product returned, and it was actually purchased through Amazon, so I don't know if it was just the handling of the product(video card), nevertheless they exchanged my product hassle free, and the build was a great success. They stand by their products and are quality made.
 
-Notable mentions, 100% copper pad, max 20dB(A) pump noise, Aluminum radiator, 3x 120x120x25mm fans, quiet out of the box. 5-Year Warranty.
+Notable mentions,
+
+> 100% copper pad
+>
+> Max 20dB(A) pump noise
+>
+> Aluminum radiator
+>
+> 3x 120x120x25mm fans
+>
+> Quiet out of the box
+>
+> 5-Year Warranty.
 
 > $89.99 CAD
 
 ## Memory
 
-This motherboard supports DDR4 memory, and although it does support [ECC memory](https://en.wikipedia.org/wiki/ECC_memory), I will be using standard DDR 4 at the speed specified by Asus. I've had great success with G.Skill branded memory in the past, and for this build I'll use [Ripjaws V DDR4-3200 CL16-18-18-38 1.35V 256GB 8x32GB](https://www.gskill.com/product/165/184/1571734171/F4-3200C16Q2-256GVK), they are supported and tested by Asus for this motherboard [Memory](https://www.asus.com/ca-en/Motherboards-Components/Motherboards/Workstation/Pro-WS-WRX80E-SAGE-SE-WIFI/HelpDesk_QVL_Memory/). Price point is actually good, considering the ammount of ram you're getting, **256GB (8x32GB)**, and **Limited Lifetime Warranty**. Epic
+This motherboard supports DDR4 memory, and although it does support [ECC memory](https://en.wikipedia.org/wiki/ECC_memory), I will be using standard DDR 4 at the speed specified by Asus. I've had great success with G.Skill branded memory in the past, and for this build I'll use [Ripjaws V DDR4-3200 CL16-18-18-38 1.35V 256GB 8x32GB](https://www.gskill.com/product/165/184/1571734171/F4-3200C16Q2-256GVK), they are supported and tested by Asus for this motherboard's [Memory](https://www.asus.com/ca-en/Motherboards-Components/Motherboards/Workstation/Pro-WS-WRX80E-SAGE-SE-WIFI/HelpDesk_QVL_Memory/). Price point is actually good, considering the ammount of ram you're getting, **256GB (8x32GB)**, and **Limited Lifetime Warranty**. Epic
 
 > $716.56 CAD
 
 ## Storage
 
-For my host OS I always go with a fast booting, high I/O NVME SSD, and for this build I will go with the [980 PRO PCIe® 4.0 NVMe™ SSD 1TB](https://www.samsung.com/us/computing/memory-storage/solid-state-drives/980-pro-pcie-4-0-nvme-ssd-1tb-mz-v8p1t0b-am/). I've had excellent performance and durability under extreme conditions with Samsung drives and in my opinion are the best. Samsung says "Genuine PCIe 4.0 NVMe® speed (up to 7,000/5,000MB/s for read/write speed)" and that's great. I will add this on the list, and select a few additional drives.
+For my host OS I always go with a fast booting, high I/O NVME SSD, and for this build I will go with the [980 PRO PCIe® 4.0 NVMe™ SSD 1TB](https://www.samsung.com/us/computing/memory-storage/solid-state-drives/980-pro-pcie-4-0-nvme-ssd-1tb-mz-v8p1t0b-am/). I've had excellent performance and durability under extreme conditions with Samsung drives, and in my opinion are the best. Samsung says "Genuine PCIe 4.0 NVMe® speed (up to 7,000/5,000MB/s for read/write speed)" and that's great. I will add this on the list, and select a few additional drives.
 
 > $129.99 CAD
 
@@ -183,7 +195,7 @@ This is an amazing build, probably overkill for the everyday user, however for a
 
 A summary on [4n6 Build](https://pcpartpicker.com/user/ryd3v/saved/YvZ3wP) does not include the CPU and motherboard, so we will add that amount manually now.
 
-Our build cost before taxes and shipping is **$6545.48 CAD**, and that is not to bad considering the gear we have here. If you are interested in a build like this for your lab, drop me a line [Ryd3v](https://ryd3v.rocks/), I ship internationally, and provide 1 year of technical support for each system I build.
+Our build cost before taxes and shipping is **$6545.48 CAD**, and that is not too bad considering the gear we have here. If you are interested in a build like this for your lab, drop me a line [Ryd3v](https://ryd3v.rocks/), I ship internationally, and provide 1 year of technical support for each system I build.
 
 Stay tuned for a Intel variant build, for those who like to live dangerously ;)
 
